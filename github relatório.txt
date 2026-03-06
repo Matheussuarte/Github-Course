@@ -1,0 +1,77 @@
+1️⃣ FLUXO DE TRABALHOS
+[Trabalho Local] 
+     |
+     | git add / git commit
+     v
+[Repositório Local]
+     |
+     | git push
+     v
+[Repositório Remoto - GitHub]
+     ^
+     | git pull
+[Colaborador / Você atualizando código]
+
+Commit → Salva alterações localmente
+
+Push → Envia alterações para GitHub
+
+Pull → Atualiza seu repositório local com mudanças remotas
+
+2️⃣ ESTRUTURA DAS BRANCHES
+main
+ │
+ ├─ feature/login
+ │     └─ desenvolvimento
+ │
+ ├─ feature/profile
+ │     └─ desenvolvimento
+ │
+ └─ bugfix/navbar
+       └─ correção
+Cada branch = linha separada de desenvolvimento
+
+Merge = unir branch ao main
+
+3️⃣ BOAS PRÁTICAS
+- Commit frequente e mensagens claras
+- Use branches para novas funcionalidades
+- Atualize sempre com git pull antes de enviar código
+- Use .gitignore para arquivos que não precisam estar no Git
+- Evite enviar senhas ou chaves para o GitHub
+
+4️⃣ COMANDOS ESSENCIAIS 
+# Configuração do usuário
+git config --global user.name "Nome": Define o nome do usuário no Git
+git config --global user.email "email@exemplo.com": Define o email do usuário no Git
+
+# Inicialização e clonagem
+git init: Cria um repositório Git na pasta atual
+git clone <URL_DO_REPO>: Clona um repositório remoto para o computador
+
+# Verificação de status e histórico
+git status: Mostra arquivos modificados, adicionados ou não rastreados
+git log: Exibe o histórico de commits do repositório
+git diff: Mostra as diferenças entre arquivos modificados e a última versão commitada
+
+# Controle de alterações
+git add <arquivo>: Adiciona um arquivo ao stage (preparando para commit)
+git add .: Adiciona todos os arquivos modificados ao stage
+git commit -m "Mensagem": Salva alterações no repositório local com uma mensagem descritiva
+
+# Trabalhando com branches
+git branch: Lista todas as branches existentes
+git branch <nome-da-branch>: Cria uma nova branch
+git checkout <nome-da-branch>: Muda para a branch especificada
+git merge <nome-da-branch>: Une a branch especificada à branch atual
+
+# Sincronização com repositório remoto
+git remote add origin <URL_DO_REPO>: Conecta o repositório local a um remoto
+git push origin <branch>: Envia as alterações para o repositório remoto
+git pull origin <branch>: Atualiza o repositório local com alterações do remoto
+
+# Remoção de arquivos
+git rm <arquivo>: Remove o arquivo do repositório e do diretório local
+
+# Reverter alterações
+git reset HEAD <arquivo>: Remove o arquivo do stage sem apagar alterações
